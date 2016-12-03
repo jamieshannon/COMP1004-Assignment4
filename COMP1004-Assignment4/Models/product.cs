@@ -6,7 +6,7 @@ namespace COMP1004_Assignment4.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class product
+    public partial class Product
     {
         public short productID { get; set; }
 

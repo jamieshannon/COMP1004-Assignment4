@@ -76,7 +76,7 @@
       <DependentUpon>COMP1004DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\ComputerContext.cs" />
-    <Compile Include="Models\product.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>

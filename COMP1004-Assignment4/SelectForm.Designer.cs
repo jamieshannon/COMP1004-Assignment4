@@ -86,6 +86,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -124,6 +126,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(43, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(667, 306);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -373,7 +376,7 @@
             this.HardwareTextBox.Location = new System.Drawing.Point(154, 430);
             this.HardwareTextBox.Name = "HardwareTextBox";
             this.HardwareTextBox.ReadOnly = true;
-            this.HardwareTextBox.Size = new System.Drawing.Size(204, 29);
+            this.HardwareTextBox.Size = new System.Drawing.Size(304, 29);
             this.HardwareTextBox.TabIndex = 3;
             // 
             // CancelButton
@@ -384,6 +387,7 @@
             this.CancelButton.TabIndex = 4;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NextButton
             // 
@@ -394,6 +398,7 @@
             this.NextButton.TabIndex = 5;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectForm
             // 

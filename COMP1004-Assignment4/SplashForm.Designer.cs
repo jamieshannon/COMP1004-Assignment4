@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
+            this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // SplashFormTimer
+            // 
+            this.SplashFormTimer.Enabled = true;
+            this.SplashFormTimer.Interval = 3000;
+            this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::COMP1004_Assignment4.Properties.Resources.dollar_computers_logo;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(676, 190);
             this.ControlBox = false;
@@ -49,6 +58,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer SplashFormTimer;
     }
 }
 

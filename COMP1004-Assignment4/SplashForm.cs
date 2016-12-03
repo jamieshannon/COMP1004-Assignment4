@@ -16,5 +16,23 @@ namespace COMP1004_Assignment4
         {
             InitializeComponent();
         }
+
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            //hide the splash form
+            this.Hide();
+
+            //create an object for the next form
+            StartForm startForm = new StartForm();
+
+            //point this form to the parent form
+            startForm.previousForm = this;
+
+            //show the next form
+            startForm.Show();
+
+            //disable the timer event
+            SplashFormTimer.Enabled = false;
+        }
     }
 }

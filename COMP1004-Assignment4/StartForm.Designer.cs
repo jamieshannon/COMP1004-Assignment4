@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.NewOrderButton = new System.Windows.Forms.Button();
             this.LoadOrderButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
@@ -37,16 +38,17 @@
             // 
             // NewOrderButton
             // 
-            this.NewOrderButton.Location = new System.Drawing.Point(92, 183);
+            this.NewOrderButton.Location = new System.Drawing.Point(122, 163);
             this.NewOrderButton.Name = "NewOrderButton";
             this.NewOrderButton.Size = new System.Drawing.Size(93, 35);
             this.NewOrderButton.TabIndex = 0;
             this.NewOrderButton.Text = "New Order";
             this.NewOrderButton.UseVisualStyleBackColor = true;
+            this.NewOrderButton.Click += new System.EventHandler(this.NewOrderButton_Click);
             // 
             // LoadOrderButton
             // 
-            this.LoadOrderButton.Location = new System.Drawing.Point(92, 236);
+            this.LoadOrderButton.Location = new System.Drawing.Point(122, 216);
             this.LoadOrderButton.Name = "LoadOrderButton";
             this.LoadOrderButton.Size = new System.Drawing.Size(93, 35);
             this.LoadOrderButton.TabIndex = 1;
@@ -55,18 +57,21 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(92, 288);
+            this.ExitButton.Location = new System.Drawing.Point(122, 268);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(93, 35);
             this.ExitButton.TabIndex = 2;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ImagePictureBox
             // 
-            this.ImagePictureBox.Location = new System.Drawing.Point(92, 30);
+            this.ImagePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ImagePictureBox.Image")));
+            this.ImagePictureBox.Location = new System.Drawing.Point(12, 30);
             this.ImagePictureBox.Name = "ImagePictureBox";
-            this.ImagePictureBox.Size = new System.Drawing.Size(100, 116);
+            this.ImagePictureBox.Size = new System.Drawing.Size(337, 86);
+            this.ImagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ImagePictureBox.TabIndex = 3;
             this.ImagePictureBox.TabStop = false;
             // 
@@ -74,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 357);
+            this.ClientSize = new System.Drawing.Size(362, 357);
             this.ControlBox = false;
             this.Controls.Add(this.ImagePictureBox);
             this.Controls.Add(this.ExitButton);
