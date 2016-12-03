@@ -12,6 +12,7 @@ namespace COMP1004_Assignment4
 {
     public partial class OrderForm : Form
     {
+        public ProductInfoForm previousForm;
         public OrderForm()
         {
             InitializeComponent();

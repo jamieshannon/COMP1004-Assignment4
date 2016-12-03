@@ -122,6 +122,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -136,6 +137,7 @@
             this.selectAnotherProductToolStripMenuItem.Name = "selectAnotherProductToolStripMenuItem";
             this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.selectAnotherProductToolStripMenuItem.Text = "Select Another Product";
+            this.selectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.SelectAnotherButton_Click);
             // 
             // ProductIDLabel
             // 
@@ -172,6 +174,7 @@
             this.ProductIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductIDTextBox.Location = new System.Drawing.Point(129, 47);
             this.ProductIDTextBox.Name = "ProductIDTextBox";
+            this.ProductIDTextBox.ReadOnly = true;
             this.ProductIDTextBox.Size = new System.Drawing.Size(100, 26);
             this.ProductIDTextBox.TabIndex = 4;
             // 
@@ -180,6 +183,7 @@
             this.ConditionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConditionTextBox.Location = new System.Drawing.Point(336, 49);
             this.ConditionTextBox.Name = "ConditionTextBox";
+            this.ConditionTextBox.ReadOnly = true;
             this.ConditionTextBox.Size = new System.Drawing.Size(100, 26);
             this.ConditionTextBox.TabIndex = 5;
             // 
@@ -188,6 +192,7 @@
             this.CostTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CostTextBox.Location = new System.Drawing.Point(551, 49);
             this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 26);
             this.CostTextBox.TabIndex = 6;
             // 
@@ -213,6 +218,7 @@
             // 
             this.PlatformTextBox.Location = new System.Drawing.Point(134, 38);
             this.PlatformTextBox.Name = "PlatformTextBox";
+            this.PlatformTextBox.ReadOnly = true;
             this.PlatformTextBox.Size = new System.Drawing.Size(165, 26);
             this.PlatformTextBox.TabIndex = 6;
             // 
@@ -230,6 +236,7 @@
             // 
             this.ManufacturerTextBox.Location = new System.Drawing.Point(134, 83);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
+            this.ManufacturerTextBox.ReadOnly = true;
             this.ManufacturerTextBox.Size = new System.Drawing.Size(165, 26);
             this.ManufacturerTextBox.TabIndex = 8;
             // 
@@ -247,6 +254,7 @@
             // 
             this.ModelTextBox.Location = new System.Drawing.Point(506, 83);
             this.ModelTextBox.Name = "ModelTextBox";
+            this.ModelTextBox.ReadOnly = true;
             this.ModelTextBox.Size = new System.Drawing.Size(294, 26);
             this.ModelTextBox.TabIndex = 12;
             // 
@@ -264,6 +272,7 @@
             // 
             this.OSTextBox.Location = new System.Drawing.Point(506, 38);
             this.OSTextBox.Name = "OSTextBox";
+            this.OSTextBox.ReadOnly = true;
             this.OSTextBox.Size = new System.Drawing.Size(294, 26);
             this.OSTextBox.TabIndex = 10;
             // 
@@ -336,6 +345,7 @@
             // 
             this.MemoryTextBox.Location = new System.Drawing.Point(113, 33);
             this.MemoryTextBox.Name = "MemoryTextBox";
+            this.MemoryTextBox.ReadOnly = true;
             this.MemoryTextBox.Size = new System.Drawing.Size(100, 26);
             this.MemoryTextBox.TabIndex = 3;
             // 
@@ -343,6 +353,7 @@
             // 
             this.LCDSizeTextBox.Location = new System.Drawing.Point(341, 36);
             this.LCDSizeTextBox.Name = "LCDSizeTextBox";
+            this.LCDSizeTextBox.ReadOnly = true;
             this.LCDSizeTextBox.Size = new System.Drawing.Size(100, 26);
             this.LCDSizeTextBox.TabIndex = 4;
             // 
@@ -350,6 +361,7 @@
             // 
             this.HDDTextBox.Location = new System.Drawing.Point(570, 33);
             this.HDDTextBox.Name = "HDDTextBox";
+            this.HDDTextBox.ReadOnly = true;
             this.HDDTextBox.Size = new System.Drawing.Size(229, 26);
             this.HDDTextBox.TabIndex = 5;
             // 
@@ -357,6 +369,7 @@
             // 
             this.GPUTypeTextBox.Location = new System.Drawing.Point(570, 66);
             this.GPUTypeTextBox.Name = "GPUTypeTextBox";
+            this.GPUTypeTextBox.ReadOnly = true;
             this.GPUTypeTextBox.Size = new System.Drawing.Size(229, 26);
             this.GPUTypeTextBox.TabIndex = 11;
             // 
@@ -364,6 +377,7 @@
             // 
             this.CPUNumberTextBox.Location = new System.Drawing.Point(341, 69);
             this.CPUNumberTextBox.Name = "CPUNumberTextBox";
+            this.CPUNumberTextBox.ReadOnly = true;
             this.CPUNumberTextBox.Size = new System.Drawing.Size(100, 26);
             this.CPUNumberTextBox.TabIndex = 10;
             // 
@@ -371,6 +385,7 @@
             // 
             this.CPUBrandTextBox.Location = new System.Drawing.Point(113, 66);
             this.CPUBrandTextBox.Name = "CPUBrandTextBox";
+            this.CPUBrandTextBox.ReadOnly = true;
             this.CPUBrandTextBox.Size = new System.Drawing.Size(100, 26);
             this.CPUBrandTextBox.TabIndex = 9;
             // 
@@ -405,6 +420,7 @@
             // 
             this.WebCamTextBox.Location = new System.Drawing.Point(570, 102);
             this.WebCamTextBox.Name = "WebCamTextBox";
+            this.WebCamTextBox.ReadOnly = true;
             this.WebCamTextBox.Size = new System.Drawing.Size(229, 26);
             this.WebCamTextBox.TabIndex = 17;
             // 
@@ -412,6 +428,7 @@
             // 
             this.CPUSpeedTextBox.Location = new System.Drawing.Point(341, 105);
             this.CPUSpeedTextBox.Name = "CPUSpeedTextBox";
+            this.CPUSpeedTextBox.ReadOnly = true;
             this.CPUSpeedTextBox.Size = new System.Drawing.Size(100, 26);
             this.CPUSpeedTextBox.TabIndex = 16;
             // 
@@ -419,6 +436,7 @@
             // 
             this.CPUTypeTextBox.Location = new System.Drawing.Point(113, 102);
             this.CPUTypeTextBox.Name = "CPUTypeTextBox";
+            this.CPUTypeTextBox.ReadOnly = true;
             this.CPUTypeTextBox.Size = new System.Drawing.Size(100, 26);
             this.CPUTypeTextBox.TabIndex = 15;
             // 
@@ -436,9 +454,9 @@
             this.CPUSpeedLabel.AutoSize = true;
             this.CPUSpeedLabel.Location = new System.Drawing.Point(239, 105);
             this.CPUSpeedLabel.Name = "CPUSpeedLabel";
-            this.CPUSpeedLabel.Size = new System.Drawing.Size(76, 20);
+            this.CPUSpeedLabel.Size = new System.Drawing.Size(93, 20);
             this.CPUSpeedLabel.TabIndex = 13;
-            this.CPUSpeedLabel.Text = "LCD Size";
+            this.CPUSpeedLabel.Text = "CPU Speed";
             // 
             // CPUTypeLabel
             // 
@@ -459,6 +477,7 @@
             this.SelectAnotherButton.TabIndex = 9;
             this.SelectAnotherButton.Text = "Select Another Product";
             this.SelectAnotherButton.UseVisualStyleBackColor = true;
+            this.SelectAnotherButton.Click += new System.EventHandler(this.SelectAnotherButton_Click);
             // 
             // CancelButton
             // 
@@ -470,6 +489,7 @@
             this.CancelButton.TabIndex = 10;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NextButton
             // 
@@ -481,6 +501,7 @@
             this.NextButton.TabIndex = 11;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // ProductInfoForm
             // 
@@ -504,6 +525,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
